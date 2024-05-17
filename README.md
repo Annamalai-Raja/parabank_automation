@@ -1,4 +1,5 @@
 Automated Testing for Banking Application
+
 This repository contains a Java-based automation script for a banking application. The script utilizes Selenium WebDriver and TestNG framework for automated testing of various banking functionalities. The script covers end-to-end testing scenarios including login, account opening, loan application, fund transfer, bill payment, and logout.
 
 Features
