@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParaBank Test Suite">
+    <listeners>
+        <listener class-name="utils.Screenshotlistener"/>
+    </listeners>
+
+  <test name="Login Test case"><classes>
+	  <class name="testCases.Test_Login"></class>
+  </classes></test>
+   
+  <parameter name="accountType" value="SAVINGS"></parameter>
+  <parameter name="accountNumber" value="12345"></parameter>
+  <test name="Open New Account  Test case">
+	  <classes><class name="testCases.Test_openNewaccount"></class></classes>
+  </test>
+  
+  <test name="Account overview Testcase">
+	  <classes>
+		  <class name="testCases.Test_accountOverview"></class>
+	  </classes>
+  </test>
+ 
+  <parameter name="fromaccount" value="13344"></parameter>
+  <parameter name="toaccount" value="13344"></parameter>
+  <test name="Transfer fund  Test case">
+ <classes>
+ <class name="testCases.Test_transferFund"></class>
+ </classes></test>
+ 
+ <test name="Bill pay test cases">
+ <classes><class name="testCases.Test_billPay"></class>
+ </classes>
+ </test>
+ 
+ <test name="Update Contactinfo Test cases">
+ <classes>
+ <class name="testCases.Test_updateContactinfo"></class>
+ </classes>
+ </test>
+ 
+ <test name="Logout test Cases">
+ <classes>
+ <class name="testCases.Test_logOut"></class>
+ </classes>
+ </test>
+</suite> <!-- Suite -->

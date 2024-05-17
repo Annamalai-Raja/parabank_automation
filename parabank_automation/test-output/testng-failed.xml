@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ParaBank Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="fromaccount" value="13344"/>
+  <parameter name="accountType" value="SAVINGS"/>
+  <parameter name="toaccount" value="13344"/>
+  <parameter name="accountNumber" value="12345"/>
+  <listeners>
+    <listener class-name="utils.Screenshotlistener"/>
+  </listeners>
+  <test thread-count="5" name="Open New Account  Test case(failed)">
+    <classes>
+      <class name="testCases.Test_openNewaccount">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="open_Newacc" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.Test_openNewaccount -->
+    </classes>
+  </test> <!-- Open New Account  Test case(failed) -->
+  <test thread-count="5" name="Account overview Testcase(failed)">
+    <classes>
+      <class name="testCases.Test_accountOverview">
+        <methods>
+          <include name="acc_Overview"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.Test_accountOverview -->
+    </classes>
+  </test> <!-- Account overview Testcase(failed) -->
+  <test thread-count="5" name="Transfer fund  Test case(failed)">
+    <classes>
+      <class name="testCases.Test_transferFund">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="transferFund"/>
+        </methods>
+      </class> <!-- testCases.Test_transferFund -->
+    </classes>
+  </test> <!-- Transfer fund  Test case(failed) -->
+  <test thread-count="5" name="Bill pay test cases(failed)">
+    <classes>
+      <class name="testCases.Test_billPay">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="billPay"/>
+        </methods>
+      </class> <!-- testCases.Test_billPay -->
+    </classes>
+  </test> <!-- Bill pay test cases(failed) -->
+  <test thread-count="5" name="Update Contactinfo Test cases(failed)">
+    <classes>
+      <class name="testCases.Test_updateContactinfo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="updateContact"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.Test_updateContactinfo -->
+    </classes>
+  </test> <!-- Update Contactinfo Test cases(failed) -->
+  <test thread-count="5" name="Logout test Cases(failed)">
+    <classes>
+      <class name="testCases.Test_logOut">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- testCases.Test_logOut -->
+    </classes>
+  </test> <!-- Logout test Cases(failed) -->
+</suite> <!-- Failed suite [ParaBank Test Suite] -->
